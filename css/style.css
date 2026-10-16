@@ -1,0 +1,260 @@
+
+/* Lines that include responsive sizing and rem values 
+were generated and/or edited by ChatGPT to refine values 
+comparativvely to the originally written pixel values. 
+Layout and general design choices are my own. */
+
+/* General page styling ; applies CSS to all pages */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #00274C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', 'Merriweather', sans-serif;
+    font-size: max(1.5rem, min(5vw, 3rem));
+    line-height: 1.3;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+h2 {
+    font-family: 'Montserrat', 'Merriweather', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #00274C;
+    text-underline-offset: 0.2rem;
+}
+
+a:hover {
+    text-decoration-thickness: 3px;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+header > img {
+    display: block;
+    width: min(65%, 13rem);
+    height: auto;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Nav style and grid */
+
+nav {
+    width: 75%;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 4px solid #FFCB05;
+    border-radius: 0.75rem;
+}
+
+nav ul {
+    color: #00274C;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1rem;
+}
+
+
+nav a {
+    padding: 1rem 0.75rem;
+    line-height: 1rem;
+    font-size: 0.95rem;
+    font-weight: 650;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #FFCB05;
+}
+
+
+/* Main page grid */
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#main > section,
+#main > aside,
+#main > img {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+/* Sections */
+
+section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background-color: #F4F6F8;
+    border-radius: 0.5rem;
+}
+
+section h2 {
+    border-bottom: 3px solid #FFCB05;
+    padding-bottom: 0.5rem;
+}
+
+/* Article cards */
+
+article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background-color: #FFFFFF;
+    border-left: 5px solid #FFCB05;
+    border-radius: 0.4rem;
+}
+
+article p {
+    margin: 0;
+}
+
+article a {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* Images and YT video */
+
+#main img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+/* Lists */
+
+section ul,
+section ol {
+    padding-left: 1.5rem;
+}
+
+section li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Aside */
+
+aside {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background-color: #00274C;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+
+aside a {
+    color: #FFCB05;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* Page Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.75rem;
+    padding: 2rem 1rem;
+    background-color: #00274C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* General Keyboard accessibility */
+
+.skip {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    z-index: 1000;
+    padding: 0.75rem 1rem;
+    background-color: #FFFFFF;
+    color: #00274C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip:focus {
+    top: 1rem;
+}
+
+:focus-visible {
+    outline: 3px dashed #1eff00;
+    outline-offset: 3px;
+}
