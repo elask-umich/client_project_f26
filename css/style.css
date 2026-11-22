@@ -224,6 +224,10 @@ section li {
     overflow: auto;
 }
 
+.tableWrapper:focus{
+    overflow: scroll;
+}
+
 td, th {
   padding: 0.75rem 1rem;
   white-space: nowrap; 
@@ -316,11 +320,11 @@ footer p {
     }
 
     h1 {
-    font-family: 'IBM Plex Sans', 'Merriweather', sans-serif;
-    font-size: max(3rem, min(5vw, 3rem));
-    line-height: 1.3;
-    text-align: center;
-    padding: 1.5rem 1rem;
+        font-family: 'IBM Plex Sans', 'Merriweather', sans-serif;
+        font-size: max(3rem, min(5vw, 3rem));
+        line-height: 1.3;
+        text-align: center;
+        padding: 1.5rem 1rem;
     }
 
     h2 {
