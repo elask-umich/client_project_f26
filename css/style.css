@@ -194,6 +194,7 @@ article a {
 #main img {
     display: block;
     width: 75%;
+    justify-self: center;
     height: auto;
     border-radius: 0.4rem;
 }
