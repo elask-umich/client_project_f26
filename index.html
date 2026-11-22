@@ -15,7 +15,7 @@
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
-                <li><a href ="index.html">Home</a></li>
+                <li><a href ="index.html" class="active">Home</a></li>
                 <li><a href ="prep.html">Preparing for Your Experience</a></li>
                 <li><a href="during.html">During Your Experience</a></li>
                 <li><a href="after.html">After Your Experience</a></li>
@@ -52,6 +52,8 @@
     <section>
         <h2>Guidance for Every Stage</h2>
         <p>Engaged learning projects can change as new needs, constraints, and insights emerge. Find guidance for the stage of work you are navigating <strong>now.</strong></p>
+        
+        <div id="articleWrapper">
         <article>
           <h3>Start Here</h3>
           <p>Set learning goals, understand the project context, examine your assumptions, define team roles, and establish a strong relationship with your partner.</p>
@@ -69,11 +71,15 @@
           <p>Complete a responsible handoff, evaluate your impact, reflect on your growth, and translate your work into resume, portfolio, and interview content.</p>
           <a href="after.html">Plan your next steps</a>
         </article>
+
+        </div>
       </section>
 
       <section>
         <h2>Featured Programs</h2>
         <p>Explore opportunities to collaborate with organizations, communities, student teams, and partners in Michigan and beyond.</p>
+        
+        <div id="articleWrapper">
         <article>
         <h3><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=12810">AI Clinic Project Experience</a></h3>
         <p>Work with a team on an applied artificial intelligence project for a partner organization.</p>
@@ -103,7 +109,10 @@
           <h3><a href="https://www.si.umich.edu/student-life/study-abroad">Study Abroad</a></h3>
           <p>Build intercultural awareness and apply your learning in an international setting. </p>
         </article>
+
+      </div>
       </section>
+
       <section>
         <h2>About the Engaged Learning Office</h2>
         <p>The Engaged Learning Office works with partners across industries and sectors, from technology companies to grassroots nonprofits and cultural heritage institutions, to provide project-based opportunities for UMSI students.</p>
@@ -112,11 +121,10 @@
 
       <aside>
         <h2>Stay Connected with ELO</h2>
-        <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
-        <div>
-          <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a>
+        <div id="asideContainer">
+        <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter: <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a></p>
+        <p>Questions? Email: <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu </a>.</p>
         </div>
-        <p>Questions? <br>Email: <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu </a>.</p>
       </aside>
 
 
@@ -128,7 +136,11 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 </html>

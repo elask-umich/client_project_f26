@@ -17,7 +17,7 @@
                     <li><a href ="index.html">Home</a></li>
                     <li><a href ="prep.html">Preparing for Your Experience</a></li>
                     <li><a href="during.html">During Your Experience</a></li>
-                    <li><a href="after.html">After Your Experience</a></li>
+                    <li><a href="after.html" class="active">After Your Experience</a></li>
                 </ul>
             </nav>
 
@@ -80,7 +80,11 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
